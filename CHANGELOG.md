@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/actionshq/make-new/compare/v0.1.1...v0.1.2) (2023-01-09)
+
+
+### Bug Fixes
+
+* order of multi-stage container ([61740ff](https://github.com/actionshq/make-new/commit/61740ffcdcaa4a8c65edc9ae1ddf08f2aa2ec5c3))
+
 ## [0.1.1](https://github.com/actionshq/make-new/compare/v0.1.0...v0.1.1) (2023-01-09)
 
 
