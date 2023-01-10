@@ -1,0 +1,7 @@
+[
+    { "name": "document", "iconClass": "fa-solid fa-file" },
+    { "name": "event", "iconClass": "fa-solid fa-calendar" },
+    { "name": "task", "iconClass": "fa-solid fa-list-check" },
+    { "name": "contact", "iconClass": "fa-solid fa-address-card" },
+    { "name": "call", "iconClass": "fa-solid fa-phone" }
+]
