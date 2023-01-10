@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/actionshq/make-new/compare/v0.1.4...v0.1.5) (2023-01-10)
+
+
+### Bug Fixes
+
+* comming soon subline ([cbf1133](https://github.com/actionshq/make-new/commit/cbf11339346f84aa7d0557adca1986ff2b42ba62))
+
 ## [0.1.4](https://github.com/actionshq/make-new/compare/v0.1.3...v0.1.4) (2023-01-10)
 
 
