@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/actionshq/make-new/compare/v0.1.3...v0.1.4) (2023-01-10)
+
+
+### Bug Fixes
+
+* hide directory button on small screens ([ac0e300](https://github.com/actionshq/make-new/commit/ac0e300ae19569ca888c2f4831ee8b649f958e82))
+
 ## [0.1.3](https://github.com/actionshq/make-new/compare/v0.1.2...v0.1.3) (2023-01-10)
 
 
