@@ -18,7 +18,7 @@
                 <div class="text-center">
                     <p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">Coming soon</p>
                     <p class="mx-auto mt-5 max-w-xl text-xl text-gray-500">
-                        The last link to remember to <u>make.new</u> things.
+                        The last link to <u>make.new</u> things.
                     </p>
                 </div>
             </div>
