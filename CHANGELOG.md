@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.1.3](https://github.com/actionshq/make-new/compare/v0.1.2...v0.1.3) (2023-01-10)
+
+
+### Features
+
+* add coming soon section ([29c5d47](https://github.com/actionshq/make-new/commit/29c5d475aec465094ec60d81dc7147aebcb7da63))
+* add font awesome ([f329d8a](https://github.com/actionshq/make-new/commit/f329d8a07689bfe7a6e78494ad0609a8d31580aa))
+* add initial actions ([e45f918](https://github.com/actionshq/make-new/commit/e45f91801639dc6935d437e6cbbf89b64b48b82e))
+* add logo component ([faabec3](https://github.com/actionshq/make-new/commit/faabec35f10283f1b3b99e5c89dab34bfb5cfb6b))
+* add loopGenerator ([c5c1ec3](https://github.com/actionshq/make-new/commit/c5c1ec3a4d839a15024e2c7813a46cffb2bb57b2))
+* add tailwind ([a750411](https://github.com/actionshq/make-new/commit/a750411fb3c4fee94d21ad459ba4b1ba6bad5818))
+* initial index page ([d298a0c](https://github.com/actionshq/make-new/commit/d298a0c3ec1996c0b8af18f6d360a29cd27ddca4))
+
+
+### Bug Fixes
+
+* import font awesome as css ([bc0af1e](https://github.com/actionshq/make-new/commit/bc0af1ef513dce5b9d59e95bb0e0c7db31cff27b))
+
 ## [0.1.2](https://github.com/actionshq/make-new/compare/v0.1.1...v0.1.2) (2023-01-09)
 
 
