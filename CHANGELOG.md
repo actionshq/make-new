@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.6](https://github.com/actionshq/make-new/compare/v0.1.5...v0.1.6) (2023-01-11)
+
+
+### Features
+
+* prevent search engine indexing ([#8](https://github.com/actionshq/make-new/issues/8)) ([ec808e5](https://github.com/actionshq/make-new/commit/ec808e579022d3197c7907ee3b86918c4403bcd6)), closes [#7](https://github.com/actionshq/make-new/issues/7)
+
 ## [0.1.5](https://github.com/actionshq/make-new/compare/v0.1.4...v0.1.5) (2023-01-10)
 
 
