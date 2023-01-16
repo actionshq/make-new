@@ -1,3 +1,5 @@
+import type { Service } from "./Service"
+
 export interface Action {
 
     /**
@@ -15,4 +17,9 @@ export interface Action {
      * @example fa-solid fa-file
      */
     iconClass: string
+
+    /**
+     * Services offering this action
+     */
+    services: Service[]
 }

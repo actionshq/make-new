@@ -1,7 +1,40 @@
 [
-    { "name": "document", "iconClass": "fa-solid fa-file" },
-    { "name": "event", "iconClass": "fa-solid fa-calendar" },
-    { "name": "task", "iconClass": "fa-solid fa-list-check" },
-    { "name": "contact", "iconClass": "fa-solid fa-address-card" },
-    { "name": "call", "iconClass": "fa-solid fa-phone" }
+    {
+        "name": "Document",
+        "iconClass": "fa-solid fa-file",
+        "services": [
+            {
+                "provider": "Google",
+                "name": "Google Docs"
+            },
+            {
+                "provider": "Microsoft",
+                "name": "Microsoft Word"
+            },
+            {
+                "provider": "Dropbox",
+                "name": "Dropbox Paper"
+            }
+        ]
+    },
+    {
+        "name": "Event",
+        "iconClass": "fa-solid fa-calendar",
+        "services": []
+    },
+    {
+        "name": "Task",
+        "iconClass": "fa-solid fa-list-check",
+        "services": []
+    },
+    {
+        "name": "Contact",
+        "iconClass": "fa-solid fa-address-card",
+        "services": []
+    },
+    {
+        "name": "Call",
+        "iconClass": "fa-solid fa-phone",
+        "services": []
+    }
 ]
