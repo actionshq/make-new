@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.8](https://github.com/actionshq/make-new/compare/v0.1.7...v0.1.8) (2023-01-16)
+
+
+### Features
+
+* add action card ([480e28c](https://github.com/actionshq/make-new/commit/480e28c1f42d9f63b122b5eedc6cef5dfee01aa2))
+* add action services ([5354ec8](https://github.com/actionshq/make-new/commit/5354ec82c68c2178c9b21737a753bad46e6b99fa))
+* add favicons ([0cc5444](https://github.com/actionshq/make-new/commit/0cc5444dde671de124c913a1b7f8ae0e688a2e58))
+* add illustration ([ee00979](https://github.com/actionshq/make-new/commit/ee00979f9d8b7d4a9976d84b2475e7df33e8e559))
+* update index ([f38569b](https://github.com/actionshq/make-new/commit/f38569bcf9f97a21e08a945371472bee47af4c46))
+
 ## [0.1.7](https://github.com/actionshq/make-new/compare/v0.1.6...v0.1.7) (2023-01-11)
 
 
