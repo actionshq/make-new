@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.9](https://github.com/actionshq/make-new/compare/v0.1.8...v0.1.9) (2023-01-17)
+
+
+### Features
+
+* dev ([563f72f](https://github.com/actionshq/make-new/commit/563f72f23b7b7d07ceaf73ff293c875c93b674e3))
+
 ## [0.1.8](https://github.com/actionshq/make-new/compare/v0.1.7...v0.1.8) (2023-01-16)
 
 
