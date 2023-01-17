@@ -13,4 +13,11 @@ export interface Service {
      * @example Weeker
      */
     name: string
+
+    /**
+     * The url of a service
+     * 
+     * @example https://make.new
+     */
+    url: string
 }

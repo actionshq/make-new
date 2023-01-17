@@ -5,11 +5,18 @@ export interface Action {
     /**
      * The name of an action
      * 
-     * It is directly related to the action url.
-     * 
-     * @example Document -> make.dev/document
+     * @example Document
      */
     name: string
+
+    /**
+     * The slug of an action
+     * 
+     * It is directly related to the action url.
+     * 
+     * @example make.dev/${slug}
+     */
+    slug: string
 
     /**
      * The css icon class

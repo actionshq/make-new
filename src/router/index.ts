@@ -8,6 +8,17 @@ const router = createRouter({
       name: 'index',
       component: () => import('../views/Index.vue')
     },
+    {
+      path: '/:actionName',
+      name: 'action',
+      component: () => import('../views/Action.vue'),
+      props: route => ({ actionName: route.params.actionName })
+    },
+    {
+      path: '/404',
+      name: '404',
+      component: () => import('../views/404.vue'),
+    },
   ]
 })
 

@@ -1,0 +1,22 @@
+{
+    "name": "Document",
+    "slug": "document",
+    "iconClass": "fa-solid fa-file",
+    "services": [
+        {
+            "provider": "Google",
+            "name": "Google Docs",
+            "url": "https://docs.new"
+        },
+        {
+            "provider": "Microsoft",
+            "name": "Microsoft Word",
+            "url": "https://word.new"
+        },
+        {
+            "provider": "Dropbox",
+            "name": "Dropbox Paper",
+            "url": "https://paper.new"
+        }
+    ]
+}
