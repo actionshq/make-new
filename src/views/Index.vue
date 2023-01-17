@@ -18,7 +18,7 @@
             <Illustration class="flex items-center w-full md:w-1/2 max-h-96" />
         </div>
         <Separator>or</Separator>
-        <section class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-4">
+        <section class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-4 auto-rows-fr">
             <ActionCard v-for="action in actions" :action="action" />
         </section>
     </DefaultLayout>

@@ -1,6 +1,6 @@
 <template>
   <a :href="action.slug">
-    <div class="flex flex-col rounded-lg border border-gray-200 bg-white">
+    <div class="flex flex-col h-full rounded-lg border border-gray-200 bg-white">
       <div class="flex justify-center p-4 rounded-t-lg bg-gray-50">
         <i :class="action.iconClass" class="text-blue-600 text-8xl"></i>
       </div>
