@@ -8,8 +8,8 @@
         <h3 class=" font-medium text-gray-700 mb-2">
           <a href="#">{{ action.name }}</a>
         </h3>
-        <p class=" text-gray-500">Make a new {{ action.name.toLowerCase() }}<span v-if="providerNames.length > 0">
-            with {{ providerNames.join(", ") }} and others</span>.
+        <p class=" text-gray-500">Make a new {{ action.name.toLowerCase() }}<span v-if="serviceNames.length > 0">
+            with {{ serviceNames.join(", ") }} and others</span>.
         </p>
       </div>
     </div>
@@ -24,7 +24,7 @@ const props = defineProps<{
   action: Action
 }>() 
 
-const providerNames = computed(() => props.action.services.map(provider => provider.name))
+const serviceNames = computed(() => props.action.services.map(service => service.name))
 </script>
 
 <style>
