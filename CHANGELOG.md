@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.10](https://github.com/actionshq/make-new/compare/v0.1.9...v0.1.10) (2023-01-17)
+
+
+### Bug Fixes
+
+* action card height ([09c5ab1](https://github.com/actionshq/make-new/commit/09c5ab1a375c080ffa570ff72fa1ffe07b0ac98f))
+
 ## [0.1.9](https://github.com/actionshq/make-new/compare/v0.1.8...v0.1.9) (2023-01-17)
 
 
