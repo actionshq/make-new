@@ -6,7 +6,7 @@
       </div>
       <div class="flex flex-1 flex-col p-4 text-sm">
         <h3 class=" font-medium text-gray-700 mb-2">
-          <a href="#">{{ action.name }}</a>
+          {{ action.name }}
         </h3>
         <p class=" text-gray-500">Make a new {{ action.name.toLowerCase() }}<span v-if="serviceNames.length > 0">
             with {{ serviceNames.join(", ") }} and others</span>.
