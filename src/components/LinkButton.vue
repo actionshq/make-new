@@ -1,5 +1,5 @@
 <template>
-  <a class="rounded-full py-2 px-4 text-sm" :class="classes" :href="href">
+  <a class="rounded-full py-2 px-4 text-sm text-center" :class="classes" :href="href">
     <slot />
   </a>
 </template>
