@@ -15,6 +15,13 @@ export interface Service {
     name: string
 
     /**
+     * The icon of a service
+     * 
+     * @example base64 / url
+     */
+    icon?: string
+
+    /**
      * The url of a service
      * 
      * @example https://make.new
