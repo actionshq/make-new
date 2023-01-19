@@ -1,13 +1,7 @@
 <template>
     <DefaultLayout v-if="action" :actions="[action]">
-        <section class="flex gap-2">
-            <LinkButton
-                v-for="service in action.services"
-                type="primary"
-                target="_blank"
-                :href="service.url">
-                    {{ service.name }}
-            </LinkButton>
+        <section class="mt-6 grid grid-cols-3 gap-4 sm:grid-cols-4 sm:gap-6 lg:grid-cols-6 auto-rows-fr">
+            <ServiceCard v-for="service in action.services" :service="service" />
         </section>
     </DefaultLayout>
 </template>
@@ -18,7 +12,7 @@ import { ref, watchEffect } from 'vue';
 import { findActionByName } from '@/models/findActionByName';
 import { useRouter } from 'vue-router';
 import DefaultLayout from '@/layouts/DefaultLayout.vue';
-import LinkButton from '@/components/LinkButton.vue';
+import ServiceCard from '@/components/ServiceCard.vue';
 
 const props = defineProps<{
   actionName: string
