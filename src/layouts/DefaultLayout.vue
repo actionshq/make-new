@@ -3,7 +3,7 @@
         <nav class="flex justify-between">
             <Logo :actions="actions" />
             <div class="flex gap-x-5">
-                <LinkButton type="plain" href="/#">How to use</LinkButton>
+                <LinkButton type="plain" href="/#" class="hidden sm:inline">How to use</LinkButton>
                 <LinkButton type="primary" href="/#">Discover</LinkButton>
             </div>
         </nav>
