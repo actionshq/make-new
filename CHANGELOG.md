@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.1.11](https://github.com/actionshq/make-new/compare/v0.1.10...v0.1.11) (2023-01-19)
+
+
+### Features
+
+* add service card ([2f3101e](https://github.com/actionshq/make-new/commit/2f3101e1c3f9c8c9d1066a90ce15c6091ff1beac))
+* add service icon ([78cfeb3](https://github.com/actionshq/make-new/commit/78cfeb311524db5057efaeaa20c8947b5fe3fed4))
+
+
+### Bug Fixes
+
+* center LinkButton text ([7f9b3a9](https://github.com/actionshq/make-new/commit/7f9b3a90410df03859876c3d08dca040735e6ef7))
+* hide how to use on small screens ([40bca24](https://github.com/actionshq/make-new/commit/40bca2447b4182534919fbdfcceb7e9850faeeb9))
+* remove duplicated link in ActionCard ([b4f9fdc](https://github.com/actionshq/make-new/commit/b4f9fdc6d4bdf80b69f463cdbcfde495c1e4cbe1))
+
 ## [0.1.10](https://github.com/actionshq/make-new/compare/v0.1.9...v0.1.10) (2023-01-17)
 
 
