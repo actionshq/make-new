@@ -1,12 +1,12 @@
 <template>
-    <a aria-label="home" :href="currentAction?.slug" tabindex="-1" class="text-2xl text-slate-700 select-none focus:outline-none group">
+    <a aria-label="home" :href="currentAction?.spec.slug" tabindex="-1" class="text-2xl text-slate-700 select-none focus:outline-none group">
         <span class="font-bold leading-none">make.new</span>
         <template v-if="currentAction">
             <span> / </span>
             <Transition>
-                <span :key="currentAction.iconClass">
-                    <span class="hidden group-hover:inline">{{ currentAction.slug }}</span>
-                    <i :class="currentAction.iconClass" class="text-blue-600 text-xl group-hover:hidden"></i>
+                <span :key="currentAction.spec.iconClass">
+                    <span class="hidden group-hover:inline">{{ currentAction.spec.slug }}</span>
+                    <i :class="currentAction.spec.iconClass" class="text-blue-600 text-xl group-hover:hidden"></i>
                 </span>
             </Transition>
         </template>

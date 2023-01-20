@@ -1,5 +1,5 @@
 #!/bin/bash
 set -euo pipefail
 
-npm ci
+GITHUB_TOKEN=$(gh auth token) npm ci
 gh auth token | docker login ghcr.io -u oauth --password-stdin

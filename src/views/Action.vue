@@ -1,7 +1,7 @@
 <template>
     <DefaultLayout v-if="action" :actions="[action]">
         <section class="mt-6 grid grid-cols-3 gap-4 sm:grid-cols-4 sm:gap-6 lg:grid-cols-6 auto-rows-fr">
-            <ServiceCard v-for="service in action.services" :service="service" />
+            <ServiceCard v-for="service in action.spec.services" :service="service" />
         </section>
     </DefaultLayout>
 </template>

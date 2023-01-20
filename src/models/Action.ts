@@ -1,13 +1,7 @@
+import type { Resource } from "./Resource"
 import type { Service } from "./Service"
 
-export interface Action {
-
-    /**
-     * The name of an action
-     * 
-     * @example Document
-     */
-    name: string
+interface ActionSpec {
 
     /**
      * The slug of an action
@@ -30,3 +24,5 @@ export interface Action {
      */
     services: Service[]
 }
+
+export interface Action extends Resource<ActionSpec> {}
