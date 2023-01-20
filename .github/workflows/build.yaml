@@ -9,4 +9,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
-    - run: ./scripts/ci-build.sh
+    - run: ./scripts/init.sh
+    - run: ./scripts/build.sh
