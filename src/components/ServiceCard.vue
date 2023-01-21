@@ -8,19 +8,22 @@
     <h3 class="p-4 text-sm font-medium text-gray-700">
       {{ service.name }}
     </h3>
-    <LinkButton :href="service.url" type="primary" class="rounded-none rounded-b-lg">use</LinkButton>
+    <LinkButton
+      :href="service.url"
+      type="primary"
+      class="rounded-none rounded-b-lg"
+      >use</LinkButton
+    >
   </div>
 </template>
 
 <script setup lang="ts">
-import type { Service } from '@/models/Service';
-import LinkButton from './LinkButton.vue';
+import type { Service } from "@/models/Service";
+import LinkButton from "./LinkButton.vue";
 
-const props = defineProps<{
-  service: Service
-}>() 
+defineProps<{
+  service: Service;
+}>();
 </script>
 
-<style>
-
-</style>
+<style></style>
