@@ -16,10 +16,7 @@
             <a href="/things" class="underline">make.new/things</a> or add a new
             thing:
           </p>
-          <InputSubmit modelValue="">
-            <template #prefix>make.new&nbsp;/</template>
-            <template #submit>add</template>
-          </InputSubmit>
+          <AddActionInput @addNewAction="onAddNewAction" />
         </div>
       </div>
       <Illustration class="flex items-center w-full md:w-1/2 max-h-96" />
@@ -42,10 +39,23 @@ import DefaultLayout from "@/layouts/DefaultLayout.vue"
 import ActionCard from "@/components/ActionCard.vue"
 import Illustration from "@/components/Illustration.vue"
 import Separator from "@/components/Separator.vue"
-import InputSubmit from "@/components/InputSubmit.vue"
+import AddActionInput from "@/components/AddActionInput.vue"
 import { ref } from "vue"
+import { useRouter } from "vue-router"
 import type { Action } from "@/models/Action"
 import { findAllActions } from "@/models/findAllActions"
+import { createActionTemplate } from "@/utils/createActionTemplate"
+
+const router = useRouter()
 
 let actions = ref<Action[] | undefined>(await findAllActions())
+
+function onAddNewAction(actionSlug: string) {
+  if (actions.value?.find((action) => action.spec.slug === actionSlug)) {
+    router.push(`/${actionSlug}`)
+  } else if (actionSlug.trim() != "") {
+    const template = createActionTemplate(actionSlug)
+    window.location.href = `https://github.com/actionshq/actions/new/main?filename=actions/${actionSlug}.yaml&value=${template}`
+  }
+}
 </script>
