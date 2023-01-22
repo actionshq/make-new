@@ -22,16 +22,16 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
-import type { Action } from "@/models/Action";
+import { computed } from "vue"
+import type { Action } from "@/models/Action"
 
 const props = defineProps<{
-  action: Action;
-}>();
+  action: Action
+}>()
 
 const serviceNames = computed(() =>
   props.action.spec.services.map((service) => service.name)
-);
+)
 </script>
 
 <style></style>

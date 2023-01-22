@@ -18,12 +18,12 @@
 </template>
 
 <script setup lang="ts">
-import type { Service } from "@/models/Service";
-import LinkButton from "./LinkButton.vue";
+import type { Service } from "@/models/Service"
+import LinkButton from "./LinkButton.vue"
 
 defineProps<{
-  service: Service;
-}>();
+  service: Service
+}>()
 </script>
 
 <style></style>

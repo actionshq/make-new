@@ -4,14 +4,14 @@ export interface Resource<T> {
    *
    * @example make.new/v1alpha1
    */
-  apiVersion: string;
+  apiVersion: string
 
   /**
    * The kind of a resource
    *
    * @example Action
    */
-  kind: string;
+  kind: string
 
   /**
    * Metadata
@@ -22,11 +22,11 @@ export interface Resource<T> {
      *
      * @example Document
      */
-    name: string;
-  };
+    name: string
+  }
 
   /**
    * Specification
    */
-  spec: T;
+  spec: T
 }

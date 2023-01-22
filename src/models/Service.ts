@@ -4,26 +4,26 @@ export interface Service {
    *
    * @example Weeker
    */
-  provider: string;
+  provider: string
 
   /**
    * The name of a service
    *
    * @example Weeker
    */
-  name: string;
+  name: string
 
   /**
    * The icon of a service
    *
    * @example base64 / url
    */
-  icon?: string;
+  icon?: string
 
   /**
    * The url of a service
    *
    * @example https://make.new
    */
-  url: string;
+  url: string
 }

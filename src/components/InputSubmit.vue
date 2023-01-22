@@ -11,7 +11,9 @@
         autocomplete="off"
         autofocus
         :value="modelValue"
-        @input="emit('update:modelValue', $event.target.value)"
+        @input="
+          emit('update:modelValue', ($event.target as HTMLInputElement).value)
+        "
         class="block w-full border-gray-300 focus:border-blue-600 focus:ring-0 sm:text-sm"
       />
     </div>
@@ -26,10 +28,10 @@
 
 <script setup lang="ts">
 defineProps<{
-  modelValue: string;
-}>();
+  modelValue: string
+}>()
 
 const emit = defineEmits<{
-  (e: "update:modelValue", value: string): void;
-}>();
+  (e: "update:modelValue", value: string): void
+}>()
 </script>

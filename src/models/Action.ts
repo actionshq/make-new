@@ -1,5 +1,5 @@
-import type { Resource } from "./Resource";
-import type { Service } from "./Service";
+import type { Resource } from "./Resource"
+import type { Service } from "./Service"
 
 interface ActionSpec {
   /**
@@ -9,19 +9,19 @@ interface ActionSpec {
    *
    * @example make.dev/${slug}
    */
-  slug: string;
+  slug: string
 
   /**
    * The css icon class
    *
    * @example fa-solid fa-file
    */
-  iconClass: string;
+  iconClass: string
 
   /**
    * Services offering this action
    */
-  services: Service[];
+  services: Service[]
 }
 
 export interface Action extends Resource<ActionSpec> {}

@@ -24,23 +24,23 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
-import { useInterval } from "@vueuse/core";
-import { loopGenerator } from "@/utils/loopGenerator";
-import type { Action } from "@/models/Action";
+import { computed } from "vue"
+import { useInterval } from "@vueuse/core"
+import { loopGenerator } from "@/utils/loopGenerator"
+import type { Action } from "@/models/Action"
 
 const props = defineProps<{
-  actions?: Action[];
-}>();
+  actions?: Action[]
+}>()
 
 const actionGenerator = computed(() =>
   props.actions ? loopGenerator(props.actions) : undefined
-);
+)
 
-const transitionInterval = useInterval(4000);
+const transitionInterval = useInterval(4000)
 const currentAction = computed(
   () => actionGenerator.value?.next(transitionInterval.value).value
-);
+)
 </script>
 
 <style>

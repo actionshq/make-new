@@ -15,9 +15,9 @@
  * ```
  */
 export function* loopGenerator<T>(items: T[]): Generator<T, never, unknown> {
-  let index = 0;
+  let index = 0
   while (true) {
-    yield items[index];
-    index = index < items.length - 1 ? index + 1 : 0;
+    yield items[index]
+    index = index < items.length - 1 ? index + 1 : 0
   }
 }

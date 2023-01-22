@@ -28,24 +28,24 @@
     <section
       class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-4 auto-rows-fr"
     >
-      <ActionCard v-for="action in actions" :action="action" />
+      <ActionCard
+        v-for="action in actions"
+        :key="action.spec.slug"
+        :action="action"
+      />
     </section>
   </DefaultLayout>
 </template>
 
 <script setup lang="ts">
-import DefaultLayout from "@/layouts/DefaultLayout.vue";
-import ActionCard from "@/components/ActionCard.vue";
-import Illustration from "@/components/Illustration.vue";
-import Separator from "@/components/Separator.vue";
-import InputSubmit from "@/components/InputSubmit.vue";
-import { ref, watchEffect } from "vue";
-import type { Action } from "@/models/Action";
-import { findAllActions } from "@/models/findAllActions";
+import DefaultLayout from "@/layouts/DefaultLayout.vue"
+import ActionCard from "@/components/ActionCard.vue"
+import Illustration from "@/components/Illustration.vue"
+import Separator from "@/components/Separator.vue"
+import InputSubmit from "@/components/InputSubmit.vue"
+import { ref } from "vue"
+import type { Action } from "@/models/Action"
+import { findAllActions } from "@/models/findAllActions"
 
-let actions = ref<Action[] | undefined>(undefined);
-
-watchEffect(async () => {
-  actions.value = await findAllActions();
-});
+let actions = ref<Action[] | undefined>(await findAllActions())
 </script>

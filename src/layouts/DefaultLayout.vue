@@ -16,11 +16,11 @@
 </template>
 
 <script setup lang="ts">
-import LinkButton from "@/components/LinkButton.vue";
-import Logo from "@/components/Logo.vue";
-import type { Action } from "@/models/Action";
+import LinkButton from "@/components/LinkButton.vue"
+import Logo from "@/components/Logo.vue"
+import type { Action } from "@/models/Action"
 
 defineProps<{
-  actions?: Action[];
-}>();
+  actions?: Action[]
+}>()
 </script>
