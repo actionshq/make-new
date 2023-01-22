@@ -1,7 +1,8 @@
 import { startCase } from "lodash-es"
 
 export const createActionTemplate = (actionSlug: string) =>
-  encodeURIComponent(`apiVersion: make.new/v1alpha1
+  encodeURIComponent(`# yaml-language-server: $schema=../schemas/action.json
+apiVersion: make.new/v1alpha1
 kind: Action
 metadata:
   name: ${startCase(actionSlug)}
