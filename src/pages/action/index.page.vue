@@ -8,6 +8,7 @@
         :key="service.name"
         :service="service"
       />
+      <AddServiceCard :action="action" />
     </section>
   </DefaultLayout>
 </template>
@@ -19,6 +20,7 @@ import { findActionByName } from "@/models/findActionByName"
 import { useRouter } from "vue-router"
 import DefaultLayout from "@/layouts/DefaultLayout.vue"
 import ServiceCard from "@/components/ServiceCard.vue"
+import AddServiceCard from "@/components/AddServiceCard.vue"
 
 const props = defineProps<{
   actionName: string
