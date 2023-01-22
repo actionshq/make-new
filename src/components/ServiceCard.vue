@@ -8,12 +8,16 @@
     <h3 class="p-4 text-sm font-medium text-gray-700">
       {{ service.name }}
     </h3>
-    <LinkButton
-      :href="service.url"
-      type="primary"
-      class="rounded-none rounded-b-lg"
-      >use</LinkButton
-    >
+    <template v-for="trigger in service.triggers">
+      <LinkButton
+        v-if="trigger.type === 'LinkTrigger'"
+        :key="trigger.type"
+        :href="trigger.uri"
+        type="primary"
+        class="rounded-none rounded-b-lg"
+        >use</LinkButton
+      >
+    </template>
   </div>
 </template>
 

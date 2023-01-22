@@ -1,3 +1,5 @@
+import type { Trigger } from "./Trigger"
+
 export interface Service {
   /**
    * The provider of a service
@@ -20,10 +22,5 @@ export interface Service {
    */
   icon?: string
 
-  /**
-   * The url of a service
-   *
-   * @example https://make.new
-   */
-  url: string
+  triggers: Trigger[]
 }
