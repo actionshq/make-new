@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.12](https://github.com/actionshq/make-new/compare/v0.1.11...v0.1.12) (2023-01-22)
+
+
+### Features
+
+* add robots.txt ([0f23735](https://github.com/actionshq/make-new/commit/0f23735b49c9e71bd3afaf9a640dc6d939350740))
+* add static site generation ([5c0b986](https://github.com/actionshq/make-new/commit/5c0b9863fd55911260fbfbbc32965cd49ccd08c5))
+
 ## [0.1.11](https://github.com/actionshq/make-new/compare/v0.1.10...v0.1.11) (2023-01-19)
 
 
