@@ -4,7 +4,10 @@
       class="flex flex-col h-full rounded-lg border border-gray-200 bg-white"
     >
       <div class="flex justify-center p-4 rounded-t-lg bg-gray-50">
-        <i :class="action.spec.iconClass" class="text-blue-600 text-8xl"></i>
+        <i
+          class="fa-solid text-blue-600 text-8xl"
+          :class="`fa-${action.spec.icon.name}`"
+        ></i>
       </div>
       <div class="flex flex-1 flex-col p-4 text-sm">
         <h3 class="font-medium text-gray-700 mb-2">
@@ -23,7 +26,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue"
-import type { Action } from "@/models/Action"
+import type { Action } from "@actionshq/actions"
 
 const props = defineProps<{
   action: Action

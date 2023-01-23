@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Action } from "@/models/Action"
+import type { Action } from "@actionshq/actions"
 import { ref, watch } from "vue"
 import { findActionByName } from "@/models/findActionByName"
 import { useRouter } from "vue-router"

@@ -9,13 +9,13 @@
     <template v-if="currentAction">
       <span> / </span>
       <Transition>
-        <span :key="currentAction.spec.iconClass">
+        <span :key="currentAction.spec.icon.name">
           <span class="hidden group-hover:inline">{{
             currentAction.spec.slug
           }}</span>
           <i
-            :class="currentAction.spec.iconClass"
-            class="text-blue-600 text-xl group-hover:hidden"
+            class="fa-solid text-blue-600 text-xl group-hover:hidden"
+            :class="`fa-${currentAction.spec.icon.name}`"
           ></i>
         </span>
       </Transition>
@@ -27,7 +27,7 @@
 import { computed } from "vue"
 import { useInterval } from "@vueuse/core"
 import { loopGenerator } from "@/utils/loopGenerator"
-import type { Action } from "@/models/Action"
+import type { Action } from "@actionshq/actions"
 
 const props = defineProps<{
   actions?: Action[]

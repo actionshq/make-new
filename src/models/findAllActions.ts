@@ -1,4 +1,4 @@
-import type { Action } from "@/models/Action"
+import type { Action } from "@actionshq/actions"
 
 export const findAllActions = (): Promise<Action[]> => {
   const modules = import.meta.glob<false, any>(

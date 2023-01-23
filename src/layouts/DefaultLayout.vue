@@ -18,7 +18,7 @@
 <script setup lang="ts">
 import LinkButton from "@/components/LinkButton.vue"
 import Logo from "@/components/Logo.vue"
-import type { Action } from "@/models/Action"
+import type { Action } from "@actionshq/actions"
 
 defineProps<{
   actions?: Action[]

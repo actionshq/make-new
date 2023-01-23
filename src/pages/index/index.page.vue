@@ -42,7 +42,7 @@ import Separator from "@/components/Separator.vue"
 import AddActionInput from "@/components/AddActionInput.vue"
 import { ref } from "vue"
 import { useRouter } from "vue-router"
-import type { Action } from "@/models/Action"
+import type { Action } from "@actionshq/actions"
 import { findAllActions } from "@/models/findAllActions"
 import { createActionTemplate } from "@/utils/createActionTemplate"
 

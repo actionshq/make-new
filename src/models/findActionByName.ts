@@ -1,4 +1,4 @@
-import type { Action } from "@/models/Action"
+import type { Action } from "@actionshq/actions"
 
 export const findActionByName = (name: string): Promise<Action> =>
   import(
