@@ -44,17 +44,17 @@ import { ref } from "vue"
 import { useRouter } from "vue-router"
 import type { Action } from "@actionshq/actions"
 import { findAllActions } from "@/models/findAllActions"
-import { createActionTemplate } from "@/utils/createActionTemplate"
+import { createActionTemplate } from "@/models/createActionTemplate"
 
 const router = useRouter()
 
 let actions = ref<Action[] | undefined>(await findAllActions())
 
-function onAddNewAction(actionSlug: string) {
+async function onAddNewAction(actionSlug: string) {
   if (actions.value?.find((action) => action.spec.slug === actionSlug)) {
     router.push(`/${actionSlug}`)
   } else if (actionSlug.trim() != "") {
-    const template = createActionTemplate(actionSlug)
+    const template = encodeURIComponent(await createActionTemplate(actionSlug))
     window.location.href = `https://github.com/actionshq/actions/new/main?filename=actions/${actionSlug}.yaml&value=${template}`
   }
 }
