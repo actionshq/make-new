@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.13](https://github.com/actionshq/make-new/compare/v0.1.12...v0.1.13) (2023-01-23)
+
+
+### Features
+
+* add action input ([1c8c991](https://github.com/actionshq/make-new/commit/1c8c991d6ce41797fee7b43204e4ad78f9755e33))
+* add service card ([2cd3b01](https://github.com/actionshq/make-new/commit/2cd3b01d2dd132b95a313b0c679f4d62a83c6736))
+* use action template from package @actionshq/actions ([8284ba1](https://github.com/actionshq/make-new/commit/8284ba126671e98cccfd81f31b7b3d9cc4aad187))
+
 ## [0.1.12](https://github.com/actionshq/make-new/compare/v0.1.11...v0.1.12) (2023-01-22)
 
 
