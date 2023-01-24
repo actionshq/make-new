@@ -4,13 +4,11 @@
       <div class="flex items-center w-full md:w-1/2">
         <div class="max-w-2xl mb-8">
           <h1
-            class="text-4xl font-bold tracking-tight text-gray-800 lg:text-4xl dark:text-white"
+            class="text-4xl font-bold tracking-tight text-gray-800 lg:text-4xl"
           >
             Make new x
           </h1>
-          <p
-            class="py-5 text-xl leading-normal text-gray-500 lg:text-xl dark:text-gray-300"
-          >
+          <p class="py-5 text-xl leading-normal text-gray-500 lg:text-xl">
             Make.new is a free service to create provider independent resources.
             Start discovering how to
             <a href="/things" class="underline">make.new/things</a> or add a new
