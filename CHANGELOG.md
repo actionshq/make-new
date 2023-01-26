@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.2.0](https://github.com/actionshq/make-new/compare/v0.1.13...v0.2.0) (2023-01-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* add plain type to LinkButton
+
+### Features
+
+* add footer ([cd02fa4](https://github.com/actionshq/make-new/commit/cd02fa4ce63ebc94057ab4a404f2805a82c959d1))
+* add offline pwa ([2c0f1b8](https://github.com/actionshq/make-new/commit/2c0f1b84dbeffe98ec26a0fc49bbb7fbc805e42e))
+* add piwik for analytics ([8d0190f](https://github.com/actionshq/make-new/commit/8d0190f41b6d9c0d8e818fc8341a4586fe51801c))
+* add plain type to LinkButton ([7bb85fc](https://github.com/actionshq/make-new/commit/7bb85fc18fc5cf823031a34b8d05af37baa5e52e))
+
+
+### Bug Fixes
+
+* import only solid fontawesome icons ([97934d0](https://github.com/actionshq/make-new/commit/97934d08c6e523dd8fb7c30a99a70ced20661559))
+* remove client routing ([9de5078](https://github.com/actionshq/make-new/commit/9de507881084ae24270bc29c3dbbf2d06288d7e4))
+* remove incomplete dark ([2736f02](https://github.com/actionshq/make-new/commit/2736f0250c2fac7fe8b40464c30aa0bf855c84ec))
+
 ## [0.1.13](https://github.com/actionshq/make-new/compare/v0.1.12...v0.1.13) (2023-01-23)
 
 
