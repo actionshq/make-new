@@ -6,6 +6,7 @@ import App from "@/App.vue"
 import "../assets/main.css"
 import "@fortawesome/fontawesome-free/css/fontawesome.min.css"
 import "@fortawesome/fontawesome-free/css/solid.min.css"
+import "@fortawesome/fontawesome-free/css/brands.min.css"
 
 export async function createApp(path: string) {
   const app = createSSRApp(App)
