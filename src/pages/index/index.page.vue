@@ -11,8 +11,8 @@
           <p class="py-5 text-xl leading-normal text-gray-500 lg:text-xl">
             Make.new is a free service to create provider independent resources.
             Start discovering how to
-            <a href="/things" class="underline">make.new/things</a> or add a new
-            thing:
+            <a href="/things" class="underline">make.new/things</a> or add
+            something new:
           </p>
           <AddActionInput @addNewAction="onAddNewAction" />
         </div>
