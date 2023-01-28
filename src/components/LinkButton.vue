@@ -19,7 +19,7 @@ const props = withDefaults(
   }
 )
 
-const typeClasses: Record<(typeof props)["type"], string> = {
+const typeClasses: Record<typeof props.type, string> = {
   plain: "text-sm text-center text-gray-500 hover:text-gray-900",
   flat: "rounded-full py-2 px-4 text-sm text-center text-gray-500 hover:text-gray-900 hover:bg-slate-100",
   primary:
