@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/actionshq/make-new/compare/v0.2.0...v0.2.1) (2023-01-28)
+
+
+### Features
+
+* add legal notice ([daa47e0](https://github.com/actionshq/make-new/commit/daa47e0be8ac85cc5aeacc97363bb00b30c30907))
+* add target to LinkButton ([1393669](https://github.com/actionshq/make-new/commit/139366946bdf52cf3b43ad90796574dfdb4e1451))
+
 ## [0.2.0](https://github.com/actionshq/make-new/compare/v0.1.13...v0.2.0) (2023-01-26)
 
 
