@@ -24,17 +24,21 @@
       <LinkButton type="plain" href="/#">Terms</LinkButton>
     </nav>
     <div class="flex justify-center mt-8 space-x-6">
-      <LinkButton type="plain" href="/#">
+      <LinkButton type="plain" target="_blank" href="/#">
         <span class="sr-only">Facebook</span>
         <i class="fa-brands fa-facebook text-xl"></i>
       </LinkButton>
 
-      <LinkButton type="plain" href="/#">
+      <LinkButton type="plain" target="_blank" href="/#">
         <span class="sr-only">Twitter</span>
         <i class="fa-brands fa-twitter text-xl"></i>
       </LinkButton>
 
-      <LinkButton type="plain" href="https://github.com/actionshq/make-new">
+      <LinkButton
+        type="plain"
+        target="_blank"
+        href="https://github.com/actionshq/make-new"
+      >
         <span class="sr-only">GitHub</span>
         <i class="fa-brands fa-github text-xl"></i>
       </LinkButton>

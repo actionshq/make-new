@@ -1,5 +1,5 @@
 <template>
-  <a :class="classes" :href="href">
+  <a :class="classes" :href="href" :target="target">
     <slot />
   </a>
 </template>
@@ -7,10 +7,17 @@
 <script setup lang="ts">
 import { computed } from "vue"
 
-const props = defineProps<{
-  href: string
-  type: "plain" | "primary" | "flat"
-}>()
+const props = withDefaults(
+  defineProps<{
+    href: string
+    type?: "plain" | "primary" | "flat"
+    target?: "_self" | "_blank" | string
+  }>(),
+  {
+    type: "plain",
+    target: "_self",
+  }
+)
 
 const typeClasses: Record<(typeof props)["type"], string> = {
   plain: "text-sm text-center text-gray-500 hover:text-gray-900",
