@@ -7,6 +7,11 @@ export const routes: RouteRecordRaw[] = [
     component: () => import("./pages/index/index.page.vue"),
   },
   {
+    path: "/legal-notice",
+    name: "legal-notice",
+    component: () => import("./pages/legal-notice/index.page.vue"),
+  },
+  {
     path: "/404",
     name: "404",
     component: () => import("./renderer/_error.page.vue"),

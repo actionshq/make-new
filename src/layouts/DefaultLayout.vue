@@ -19,8 +19,10 @@
     <nav class="flex justify-center space-x-6">
       <LinkButton type="plain" href="/#">About</LinkButton>
       <LinkButton type="plain" href="/#">Blog</LinkButton>
-      <LinkButton type="plain" href="/#">Imprint</LinkButton>
-      <LinkButton type="plain" href="/#">Contact</LinkButton>
+      <LinkButton type="plain" href="/legal-notice">Legal</LinkButton>
+      <LinkButton type="plain" href="mailto:contact@appcited.com"
+        >Contact</LinkButton
+      >
       <LinkButton type="plain" href="/#">Terms</LinkButton>
     </nav>
     <div class="flex justify-center mt-8 space-x-6">
