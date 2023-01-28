@@ -1,5 +1,5 @@
 <template>
-  <header class="mx-auto max-w-7xl py-10 px-4 sm:px-6 lg:px-8">
+  <header class="mx-auto max-w-7xl py-4 md:py-8 px-4 md:px-8">
     <nav class="flex justify-between">
       <Logo :actions="actions" />
       <div class="flex gap-x-5">
@@ -10,11 +10,11 @@
       </div>
     </nav>
   </header>
-  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <main class="mx-auto max-w-7xl px-4 md:px-8">
     <slot />
   </main>
   <footer
-    class="max-w-7xl py-10 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
+    class="max-w-7xl py-4 md:py-8 mx-auto space-y-8 overflow-hidden px-4 md:px-8"
   >
     <nav class="flex justify-center space-x-6">
       <LinkButton type="plain" href="/#">About</LinkButton>
