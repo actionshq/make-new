@@ -1,7 +1,7 @@
 <template>
   <a
     aria-label="home"
-    :href="currentAction?.spec.slug"
+    :href="currentAction?.spec.slug ?? '/'"
     tabindex="-1"
     class="text-2xl text-slate-700 select-none focus:outline-none group"
   >
