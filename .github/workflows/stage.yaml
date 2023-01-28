@@ -26,7 +26,7 @@ jobs:
     - run: ./scripts/init.sh
     - run: ./scripts/check.sh
     - run: ./scripts/build.sh
-    - uses: actions/configure-pages@v2
+    - uses: actions/configure-pages@v3
     - uses: actions/upload-pages-artifact@v1
       with:
         path: dist/client
