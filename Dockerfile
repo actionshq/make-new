@@ -1,11 +1,11 @@
-FROM node:18.13.0-alpine as build
+FROM node:19.5.0-alpine as build
 WORKDIR /app
 
 COPY . .
 
 RUN ["npx", "vite", "build"]
 
-FROM node:18.13.0-alpine as dev
+FROM node:19.5.0-alpine as dev
 WORKDIR /app
 
 COPY . .
