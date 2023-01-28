@@ -6,13 +6,13 @@
           <h1
             class="text-4xl font-bold tracking-tight text-gray-800 lg:text-4xl"
           >
-            Make new x
+            Add new {action}
           </h1>
           <p class="py-5 text-xl leading-normal text-gray-500 lg:text-xl">
-            Make.new is a free service to create provider independent resources.
-            Start discovering how to
-            <a href="/things" class="underline">make.new/things</a> or add
-            something new:
+            Make.new is a free service to trigger provider independent actions.
+            Discover how to
+            <a href="/actions" class="underline">make.new/actions</a> or add a
+            new action:
           </p>
           <AddActionInput @addNewAction="onAddNewAction" />
         </div>
