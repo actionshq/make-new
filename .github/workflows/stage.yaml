@@ -16,7 +16,7 @@ jobs:
   deploy:
     runs-on: ubuntu-22.04
     container:
-      image: ghcr.io/actionshq/devcontainer:v0.1.1
+      image: ghcr.io/actionshq/devcontainer:v0.1.2
     environment:
       name: staging
       url: ${{ steps.deployment.outputs.page_url }}
