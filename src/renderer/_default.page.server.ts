@@ -4,24 +4,27 @@ import {
   dangerouslySkipEscape,
   type PageContextBuiltIn,
 } from "vite-plugin-ssr"
+import { renderHeadToString } from "@vueuse/head"
 import { createApp } from "./main"
 
 export async function render(pageContext: PageContextBuiltIn) {
-  const { app } = await createApp(pageContext.urlPathname)
+  const { app, head } = await createApp(pageContext.urlPathname)
 
   const appHtml = await renderToString(app)
 
+  const { headTags, htmlAttrs, bodyAttrs, bodyTags } = await renderHeadToString(
+    head
+  )
+
   return escapeInject`<!DOCTYPE html>
-    <html lang="en">
+    <html${dangerouslySkipEscape(htmlAttrs)}>
       <head>
         <meta charset="UTF-8">
-        <link rel="manifest" href="/manifest.webmanifest">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex,nofollow">
-        <script>if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js', { scope: '/' })})}</script>
-        <title>make.new</title>
+        ${dangerouslySkipEscape(headTags)}
       </head>
-      <body class="min-w-[320px]">
+      <body${dangerouslySkipEscape(bodyAttrs)} class="min-w-[320px]">
         <script type="text/javascript">
         (function(window, document, dataLayerName, id) {
         window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
@@ -33,6 +36,7 @@ export async function render(pageContext: PageContextBuiltIn) {
         })(window, document, 'dataLayer', 'c2f9b851-f898-4384-9519-e1ab4737142f');
         </script>
         <div id="app">${dangerouslySkipEscape(appHtml)}</div>
+        ${dangerouslySkipEscape(bodyTags)}
       </body>
     </html>`
 }

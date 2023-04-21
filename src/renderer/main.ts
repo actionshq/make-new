@@ -1,5 +1,6 @@
 import { createSSRApp } from "vue"
 import { createRouter, createMemoryHistory } from "vue-router"
+import { createHead } from "@vueuse/head"
 import { routes } from "../routes"
 import App from "@/App.vue"
 
@@ -10,6 +11,7 @@ import "@fortawesome/fontawesome-free/css/brands.min.css"
 
 export async function createApp(path: string) {
   const app = createSSRApp(App)
+
   const router = createRouter({
     history: createMemoryHistory(),
     routes,
@@ -17,5 +19,9 @@ export async function createApp(path: string) {
   router.push(path)
   await router.isReady()
   app.use(router)
-  return { app }
+
+  const head = createHead()
+  app.use(head)
+
+  return { app, head }
 }

@@ -21,6 +21,7 @@ import { useRouter } from "vue-router"
 import DefaultLayout from "@/layouts/DefaultLayout.vue"
 import ServiceCard from "@/components/ServiceCard.vue"
 import AddServiceCard from "@/components/AddServiceCard.vue"
+import { useHead } from "@unhead/vue"
 
 const props = defineProps<{
   actionName: string
@@ -36,14 +37,46 @@ try {
   router.push("404")
 }
 
-watch(
-  () => props.actionName,
-  async (actionName) => {
-    try {
-      action.value = await findActionByName(actionName)
-    } catch (error) {
-      router.push("404")
-    }
-  }
-)
+const origin = "http://localhost:3001"
+
+const manifest = {
+  name: `New ${action.value?.metadata.name}`,
+  short_name: `New ${action.value?.metadata.name}`,
+  start_url: `${origin}/${action.value?.spec.slug}`,
+  display: "standalone",
+  background_color: "#2563eb",
+  lang: "en",
+  scope: `${origin}/${action.value?.spec.slug}`,
+  theme_color: "#2563eb",
+  icons: [
+    {
+      src: `${origin}/android-chrome-192x192.png`,
+      sizes: "192x192",
+      type: "image/png",
+    },
+    {
+      src: `${origin}/android-chrome-512x512.png`,
+      sizes: "512x512",
+      type: "image/png",
+    },
+    {
+      src: `${origin}/android-chrome-512x512.png`,
+      sizes: "512x512",
+      type: "image/png",
+      purpose: "any maskable",
+    },
+  ],
+}
+
+useHead({
+  titleTemplate: () => `New ${action.value?.metadata.name}`,
+  link: [
+    {
+      rel: "manifest",
+      href: `data:application/manifest+json,${encodeURIComponent(
+        JSON.stringify(manifest)
+      )}`,
+    },
+  ],
+})
 </script>
