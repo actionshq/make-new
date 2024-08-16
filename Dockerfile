@@ -12,7 +12,7 @@ COPY . .
 
 CMD ["npx", "vite"]
 
-FROM nginx:1.27.0-alpine as app
+FROM nginx:1.27.1-alpine as app
 WORKDIR /usr/share/nginx/html
 
 COPY nginx.conf /etc/nginx/conf.d/configfile.template
